@@ -1,0 +1,145 @@
+<html class="no-js" lang="en-US"> <!--<![endif]-->
+
+<!-- Mirrored from marisa.lu/experiments/heartsensor/index.html by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 01 Jul 2018 20:10:03 GMT -->
+<head>
+
+<!-- DEFAULT META TAGS -->
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<!-- DEFAULT META TAGS -->
+
+<!-- FONTS -->
+    <link href='http://fonts.googleapis.com/css?family=Righteous&amp;subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Quicksand:300,400,700' rel='stylesheet' type='text/css'>
+<!-- FONTS -->
+
+<!-- CSS -->
+<link rel="stylesheet" id="default-style-css"  href="../../styleAVOCmenu.css" type="text/css" media="all" />
+<link rel="stylesheet" id="wolf—css" href="../../wolf.css" type="text/css" media="all" />
+
+<link rel="stylesheet" id="mqueries-style-css"  href="../../mqueries.css" type="text/css" media="all" />
+<!-- CSS -->
+
+</head>
+
+<body>
+
+<!-- PAGELOADER -->
+<div id="page-loader">
+    <div class="page-loader-inner">
+        <div class="loader"><strong>Loading</strong></div>
+    </div>
+</div>
+<!-- PAGELOADER -->
+
+<!-- PAGE CONTENT -->
+<div id="page-content">
+    <!-- PAGEBODY -->
+    <section id="page-body" class="nopadding">
+        <div class="spacer spacer-big"></div>
+        <div class="wrapper">
+            <h2>iOT BPM Bowtie</h2>
+        <div class="column-section clearfix">
+                <div class="column one-third">
+                    <h6 class="colored"><strong>WHAT IS IT?</strong></h6>
+                    <h7>A two week technical project where I made a 3D printed bowtie that measures your heart rate, displays it through a blinking LED light, and sends live BPM to be monitored in realtime from a website</h7>
+                </div>
+                <div class="column one-third">
+                    <h6 class="colored"><strong>IDEA</strong></h6>
+                    <h7>Students were required to make an iOT device with custom signal-processing code to calculate pulse. I thought a heart monitor bowtie would be funny; imagine wearing it to a date and it's broadcasting your heart beating faster.<br></br>The decision was largely inspired by data artist Mimi Onuoha and her explorations on 'weird' data's dichotomy with the everyday human experience. How much information is too much? When is it uncomfortable? What is private and public?</h7>
+                </div>
+                <div class="column one-third last-col">
+                    <h6 class="colored"><strong>EXECUTION</strong></h6>
+                    <h7 class="alttitle">Used a Particle Photon microcontroller to process signals from Adafruit's pulse sensor. My arduino code on the photon used beta discrimination to smooth the signals before calculating for pulse. Particle JS on the backend of a webpage running on my server grabbed the live BPM data from Particle's cloud.</h7>
+                </div>
+            </div> <!-- END .column-section -->
+        </div> <!-- END .wrapper -->
+        
+        <div class="spacer spacer-big"></div>
+        
+        <div class="wrapper">
+            <ul class="gallery spaced">
+                <li class="has-animation"><img src="modeling.gif" alt="SEO NAME"/></li>
+            </ul>
+        </div>
+        <div class="wrapper">
+            <ul class="gallery gallery-col2  spaced">
+                <li class="has-animation"><img src="usbBattery.gif" alt="Charging the particle"/></li>
+                <li class="has-animation"><img src="packing.gif" alt="wires inside the bow"/></li>
+            </ul>
+            <ul class="gallery gallery-col2  spaced">
+                <li class="has-animation"><img src="test.gif" alt="Charging the particle"/></li>
+                <li class="has-animation"><img src="code.gif" alt="wires inside the bow"/></li>
+            </ul>
+            <ul class="gallery gallery-col2  spaced">
+                <li class="has-animation"><img src="heartlogin.gif" alt="Charging the particle"/></li>
+                <li class="has-animation"><img src="web.gif" alt="wires inside the bow"/></li>
+            </ul>
+        </div><!-- END .wrapper-mini --> 
+        <div class="spacer spacer-big"></div>
+        <div class="wrapper">
+            <h2>Optical heart monitor app</h2>
+        <div class="column-section clearfix">
+                <div class="column one-third">
+                    <h6 class="colored"><strong>WHAT IS IT?</strong></h6>
+                    <h7>An android app that turns on the phone's flash and takes in camera feed to calculates your BPM through your finger using computervision generated data.</h7>
+                </div>
+                <div class="column one-third">
+                    <h6 class="colored"><strong>IDEA</strong></h6>
+                    <h7>I wanted practice making a robust sensor system. Created, explored and evaluated various signal processing algorithms and combinations</h7>
+                </div>
+                <div class="column one-third last-col">
+                    <h6 class="colored"><strong>EXECUTION</strong></h6>
+                    <h7 class="alttitle">Wrote the app through Processing with the android library. Exported code from laptop to a school android on developer mode via USB. Tested the accuracy of my program against iOS apps on the appstore, and ultimately against the Professor's heart monitor.</h7>
+                </div>
+            </div> <!-- END .column-section -->
+        </div> <!-- END .wrapper -->
+        <div class="spacer spacer-medium"></div>
+        <div class="wrapper">
+            <ul class="gallery gallery-col2 spaced">
+                <li><iframe src="https://player.vimeo.com/video/207273745?title=0&amp;byline=0&amp;portrait=0" width="100%" height="800" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe></li>
+                <li><p>Graph charts out variation in pixel brightness from the camera feed. The white graph is a smoother representation of the black graph&#039;s raw data because it utilizes beta discrimination optimized for smoothing as close to real time as possible. The combination of second-order derivative filtering crossing a dynamic 'zero' under averaged and predictive conditions of heart rate change allow for peak detection to determine BPM.<br></br>(so that was fancy words for using beta discrimination to smooth the values fo raw data, calculating a mean within a smaller window of the data set and setting that as the new zero crossing. In the mean time, I was still detecting how 'sharp' the peaks in the graphs were — aka, how abrupt is the change in signals — through calculating second order derivative and analyzing whether that change was within certain expected parameters — aka 'predictive conditions' (where based off previous data recieved and externally established expectations of the human body) determine the probable validity of a heart beat 'detection'. </p></li>
+            </ul>
+        </div>
+        <div class="spacer spacer-big"></div>
+        <div class="wrapper">
+            <h2>Mobile Step Counter</h2>
+        <div class="column-section clearfix">
+                <div class="column one-third">
+                    <h6 class="colored"><strong>WHAT IS IT?</strong></h6>
+                    <h7>Android app that counts your steps</h7>
+                </div>
+                <div class="column one-third">
+                    <h6 class="colored"><strong>IDEA</strong></h6>
+                    <h7>To get more practice making robust sensor systems and working with android library.</h7>
+                </div>
+                <div class="column one-third last-col">
+                    <h6 class="colored"><strong>EXECUTION</strong></h6>
+                    <h7 class="alttitle">same execution as above project, but based off acclerometer and gyrometer instead.</h7>
+                </div>
+            </div> <!-- END .column-section -->
+        </div> <!-- END .wrapper -->
+        <div class="spacer spacer-medium"></div>
+        <div class="wrapper">
+            <ul class="gallery gallery-col2 spaced">
+                <li><iframe src="https://player.vimeo.com/video/203968215?title=0&amp;byline=0&amp;portrait=0" width="100%" height="300" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe></li>
+                <li><p>Combination of peak finding (calculating derivative and change in derivative), standard deviation filtering (taking out edge cases that might otherwise throw off calculations), and dynamic zero crossing. A boolean parameter prevents double counting by only registering 1 peak for everytime the accelerometer value crosses the zero point.</p></li>
+            </ul>
+        </div>                 
+    </section>
+</div> <!-- END #page-content -->
+<!-- PAGE CONTENT -->
+
+<!-- SCRIPTS -->
+<script src="../../scripts/jquery-2.1.4.min.js"></script>
+<!-- <script type="text/javascript" src="../../scripts/avoc/jquery.easing.1.3.js"></script>
+<script type="text/javascript" src="../../scripts/avoc/jquery.easing.compatibility.js"></script>
+<script type="text/javascript" src="../../scripts/avoc/jquery.visible.min.js"></script> -->
+<script type="text/javascript" src="../../scripts/avoc/script.js"></script>
+<!-- SCRIPTS -->
+
+</body>
+
+<!-- Mirrored from marisa.lu/experiments/heartsensor/index.html by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 01 Jul 2018 20:11:48 GMT -->
+</html>
