@@ -209,7 +209,7 @@ letter-spacing: 3px;
 	top: 0;
 	left: 0;
 	width: 100%;
-	height: 0px;
+	height: 100%;
 	z-index: 10;
   height: 100%;
   text-align: center;
@@ -221,7 +221,28 @@ h1 {
   position: relative;
   top: 50%;
   transform: translateY(-50%);
-  z-index: 1;
+  z-index: 9;
+  color: #c60000;
+font-size: 20px;
+
+  &.is--fixed {
+    margin: 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    line-height: 1.5;
+    transform: translateY(0);
+    background: blue;
+  }
+}
+
+h2 {
+  margin: 300px;
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 9;
   color: #4e4e4e;
 
   &.is--fixed {
@@ -259,14 +280,16 @@ header:after {
 header #logo {
 	max-width: 100%;
 	height: 30px;								
-	position: relative;
+	position: fixed;
+    top:30px;
+    left:0;
 	z-index: 10;
 	}
 
 header #logo #dark-logo + #light-logo {
-	position: absolute;
-	top: 0;
-	left: 0;
+	position: fixed;
+    bottom:0;
+    right:0;
 	height: 100%;
 	opacity: 0; filter: alpha(opacity=0); -ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
 	}
@@ -303,6 +326,8 @@ header.header-open:not(.header-transparent) + #hero, header.header-open:not(.hea
 ------------------------------------------------*/
 #menu {
 	position: relative;
+    top: 30pxS;
+    right: 0;
 	z-index: 10;
 	}
 	
@@ -325,12 +350,12 @@ header.header-open:not(.header-transparent) + #hero, header.header-open:not(.hea
 	transition: background 0.4s ease;
 	}
 	
-.open-nav .hamburger:before, .open-nav .hamburger:after {
+.open-nav .hamburger:after, .open-nav .hamburger:before {
   	content: '';
   	width: 100%;
   	height: 100%;
   	position: absolute;
-  	background-color: #0d0d0d;
+  	background-color: #000000;
   	right: 0;
   	-webkit-transform: translateZ(0);
   	-moz-transform: translateZ(0);
@@ -346,7 +371,7 @@ header.header-open:not(.header-transparent) + #hero, header.header-open:not(.hea
     -ms-transition: -ms-transform 0.4s, background 0.4s ease, right .2s ease;
 	}
 	
-.open-nav .hamburger:before {
+.open-nav .hamburger:after {
 	right: 2px;	
   	-webkit-transform: translateY(-6px) rotate(0deg);
   	-moz-transform: translateY(-6px) rotate(0deg);
@@ -354,7 +379,7 @@ header.header-open:not(.header-transparent) + #hero, header.header-open:not(.hea
   	-o-transform: translateY(-6px) rotate(0deg);
   	transform: translateY(-6px) rotate(0deg);
 	}
-.open-nav .hamburger:after {
+.open-nav .hamburger:before {
 	right: 5px;	
   	-webkit-transform: translateY(6px) rotate(0deg);
   	-moz-transform: translateY(6px) rotate(0deg);
@@ -376,7 +401,8 @@ header.header-open:not(.header-transparent) + #hero, header.header-open:not(.hea
 	font-size: 14px;
 	line-height: 30px;										
 	text-transform: uppercase;
-	color: #0d0d0d;
+	color: #ffffff;
+    background: #0d0d0d ;
 	letter-spacing: 0.12em;
 	transition: width 0.4s ease, opacity 0.2s ease 0.3s, color 0.4s;
 	}
@@ -451,16 +477,18 @@ nav#main-nav ul > li {
 	
 nav#main-nav ul li > a {
 	display: inline-block;
-	font-family: 'Righteous', helvetica,sans-serif;;
+	font-family: "Ms Trubechet", helvetica,sans-serif;;
 	font-weight: 700;
 	font-size: 14px;
 	line-height: 30px;										
 	text-transform: uppercase;
-	color: #0d0d0d;
+	color: #ffffff;
+    background:#0d0d0d;
 	letter-spacing: 0.12em;
 	transition: all 100ms ease;
 	}
-	nav#main-nav > ul > li:hover > a, nav#main-nav > ul > li.current-menu-item > a { color: #90D4C5 !important; }
+	nav#main-nav > ul > li:hover > a, nav#main-nav > ul > li.current-menu-item > a { 	color: #ffffff;
+    background:#ff0000;!important; }
 
 /* submenu */
 nav#main-nav ul li > ul.submenu {
@@ -492,7 +520,8 @@ nav#main-nav ul li > ul.submenu > li {
 	nav#main-nav ul li > ul.submenu > li:last-child { padding-bottom: 15px; }
 	
 nav#main-nav ul li > ul.submenu > li a {
-	color: #ffffff;
+		color: #ffffff;
+    background:#0d0d0d;
 	font-weight: 400;
 	font-size: 13px;
 	line-height: 18px;
@@ -511,7 +540,8 @@ nav#main-nav ul li > ul.submenu > li a:hover, nav#main-nav ul li > ul.submenu > 
 	
 	
 /* menu color switch */
-header:not(.hero-invisible) .menu-light .open-nav .text { color: #ffffff; }
+header:not(.hero-invisible) .menu-light .open-nav .text { 	color: #ffffff;
+    background:#0d0d0d; }
 header:not(.hero-invisible) .menu-light .open-nav .hamburger, header:not(.hero-invisible) .menu-light .open-nav .hamburger:before, header:not(.hero-invisible) .menu-light .open-nav .hamburger:after { background-color: #ffffff; }
 .menu-light nav#main-nav > ul > li > a { color: #ffffff; }	
 header.nav-is-open:not(.header-transparent) .menu-light nav#main-nav > ul > li > a { color: #0d0d0d; }	
@@ -1097,7 +1127,8 @@ canvas { position:fixed; top:0; left:0; z-index:1; }
 /*=================================*/
 /*-----HERO HEADERS-----*/
 #hero {
-	position: relative;
+	position: fixed;
+    top:0;
 	overflow: hidden;
 	}
 
