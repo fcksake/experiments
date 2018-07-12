@@ -46,11 +46,27 @@
 }
 
 #photos img {
-	position: relative;
-	float: left;
+	position: static;
+	float:right;
+    margin: 0 auto;
+	padding: 0;
 	width: 100%;
-}
 
+}
+#photos sidebar {
+    position:absolute;
+    left:0;
+    writing-mode: vertical-rl;
+    text-orientation: sideways;
+    background: black;
+    color: white;
+    width: 3%;
+    float: left;
+    height: 100%;
+   /* padding: 6px 8px 6px 16px; */
+    top:0px;
+    z-index: 12;
+    }
 #photos p {
 	padding: 24% 0 6% 10%;
 	position: absolute;
@@ -59,6 +75,7 @@
     color: #000000;
 	font-size: 2.6vw;
 	text-align: left;
+    float:right;
     Z-index: 8;
 }
 
@@ -73,16 +90,7 @@
     z-index:8;
     }
     
-    #photos sidebar {
-        writing-mode: vertical-rl;
-        text-orientation: sideways;
-        background: black;
-        color: white;
-        width: 2%;
-    height: 100%;
-    padding: 6px 8px 6px 16px;
-    display: block;
-    }
+ 
     </style>
 </head>
 
@@ -101,10 +109,14 @@
       <p>A multi-disciplinary problem solver looking for design challenges and opportunities to learn. Rooted in both design and technology I'm interested in tangible media, design-oriented physical computing and user experience. </p>
                         
         SAHO let's make something wonderful--
-				    </a>
+             
+				    </a>     
         
-        
+        <sidebar>DESIGN + TECHNOLOGY</sidebar>
+               
   </section>
+    
+
 		</div>
 
 <div id="page-content">
