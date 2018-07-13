@@ -209,57 +209,41 @@ letter-spacing: 3px;
 	top: 0;
 	left: 0;
 	width: 100%;
-	height: 100%;
+	height: 200%;
 	z-index: 10;
-  height: 100%;
   text-align: center;
   background-image: url(img/cover.png);
 }
 
 h1 {
   margin: 0;
-  position: relative;
-  top: 50%;
-  transform: translateY(-50%);
+  position: static;
+  left: 50%;
+    width: 20%;
+    background-image: url(img/cover.png);
   z-index: 9;
-  color: #c60000;
+  color: #e10000;
 font-size: 20px;
 
-  &.is--fixed {
-    margin: 0;
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    line-height: 1.5;
-    transform: translateY(0);
-    background: blue;
-  }
 }
 
 h2 {
-  margin: 300px;
-  position: relative;
-  top: 50%;
+  margin: 0;
+  position: static;
+  left: 50%;
+    top: 20%;
   transform: translateY(-50%);
   z-index: 9;
-  color: #4e4e4e;
+  color: #e10000;
+font-size: 20px;
 
-  &.is--fixed {
-    margin: 0;
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    line-height: 1.5;
-    transform: translateY(0);
-    background: blue;
-  }
 }
+
+
 
 	header.non-fixed {	position: absolute; }	
 	
-header .header-inner { padding: 0px 40px; height: 0; margin-top: 50px; margin-bottom: 60px; }
+header .header-inner { padding: 0px 40px; height: 0; margin-top: 16px; margin-bottom: 60px; }
 header .header-inner.wrapper { padding: 0; }
 
 /* header background (white bar when nav is open)*/
@@ -278,15 +262,17 @@ header:after {
 	header.header-transparent:after { background: transparent; display: none; }
 		
 header #logo {
-	max-width: 100%;
-	height: 30px;								
+	max-width: 5%;
+	height: 100%;								
 	position: fixed;
-    top:30px;
     left:0;
+    top:0px;
 	z-index: 10;
+    background: #e10;
+
 	}
 
-header #logo #dark-logo + #light-logo {
+header #logo #light-logo + #dark-logo {
 	position: fixed;
     bottom:0;
     right:0;
@@ -294,7 +280,13 @@ header #logo #dark-logo + #light-logo {
 	opacity: 0; filter: alpha(opacity=0); -ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
 	}
 	
-header #logo img { max-height: 100%; }
+header #logo img { 
+    max-width: 60%;
+    max-height: 100%; 
+    position: absolute;
+    top:14%;
+    right:22%;
+    background-size: 5% 5%;}
 
 
 /* switching logos */
@@ -326,7 +318,7 @@ header.header-open:not(.header-transparent) + #hero, header.header-open:not(.hea
 ------------------------------------------------*/
 #menu {
 	position: relative;
-    top: 30pxS;
+    top: 3pxS;
     right: 0;
 	z-index: 10;
 	}
@@ -1094,7 +1086,16 @@ a.img-hover:hover .hover-caption {
 */
 
 /* your logo height */
-header #logo { height: 30px;	 }
+header #logo {
+    width:5%; 
+    height: 11%;
+    .logo:after {
+  content: "";
+  display: block;
+  padding-bottom: 100%;
+}
+}
+
 .open-nav { height: 30px; }
 .open-nav .text { line-height: 30px;	 }
 nav#main-nav ul li > a { line-height: 30px; }
