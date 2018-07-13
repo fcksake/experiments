@@ -37,6 +37,18 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
 
 .cf:before, .cf:after { content: " "; display: table; } .cf:after { clear: both; }
 
+.clearfix:after {
+	content: ".";
+	display: block;
+	clear: both;
+	height: 0;
+	visibility: hidden;
+}
+.clearfix {
+	min-height: 1px;
+	zoom: 1;
+}
+
 /*=================================*/
 /* Main Styles
 /*=================================*/
@@ -209,57 +221,40 @@ letter-spacing: 3px;
 	top: 0;
 	left: 0;
 	width: 100%;
-	height: 100%;
+	height: 200%;
 	z-index: 10;
-  height: 100%;
   text-align: center;
   background-image: url(img/cover.png);
 }
 
 h1 {
-  margin: 0;
-  position: relative;
-  top: 50%;
-  transform: translateY(-50%);
+  padding-right: 40%;
+  position: static;
+    top:0px;
+width: 16%;
   z-index: 9;
-  color: #c60000;
-font-size: 20px;
+  color: #e10000;
+font-size: 12px;
 
-  &.is--fixed {
-    margin: 0;
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    line-height: 1.5;
-    transform: translateY(0);
-    background: blue;
-  }
 }
 
 h2 {
-  margin: 300px;
-  position: relative;
-  top: 50%;
+  margin: 0;
+  position: static;
+  left: 50%;
+    top: 20%;
   transform: translateY(-50%);
   z-index: 9;
-  color: #4e4e4e;
+  color: #e10000;
+font-size: 20px;
 
-  &.is--fixed {
-    margin: 0;
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    line-height: 1.5;
-    transform: translateY(0);
-    background: blue;
-  }
 }
+
+
 
 	header.non-fixed {	position: absolute; }	
 	
-header .header-inner { padding: 0px 40px; height: 0; margin-top: 50px; margin-bottom: 60px; }
+header .header-inner { padding: 0px 40px; height: 0; margin-top: 16px; margin-bottom: 60px; }
 header .header-inner.wrapper { padding: 0; }
 
 /* header background (white bar when nav is open)*/
@@ -278,15 +273,17 @@ header:after {
 	header.header-transparent:after { background: transparent; display: none; }
 		
 header #logo {
-	max-width: 100%;
-	height: 30px;								
+	max-width: 5%;
+	height: 100%;								
 	position: fixed;
-    top:30px;
     left:0;
+    top:0px;
 	z-index: 10;
+    background: #e10;
+
 	}
 
-header #logo #dark-logo + #light-logo {
+header #logo #light-logo + #dark-logo {
 	position: fixed;
     bottom:0;
     right:0;
@@ -294,7 +291,13 @@ header #logo #dark-logo + #light-logo {
 	opacity: 0; filter: alpha(opacity=0); -ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
 	}
 	
-header #logo img { max-height: 100%; }
+header #logo img { 
+    max-width: 60%;
+    max-height: 100%; 
+    position: absolute;
+    top:14%;
+    right:22%;
+    background-size: 5% 5%;}
 
 
 /* switching logos */
@@ -326,7 +329,7 @@ header.header-open:not(.header-transparent) + #hero, header.header-open:not(.hea
 ------------------------------------------------*/
 #menu {
 	position: relative;
-    top: 30pxS;
+    top: 3pxS;
     right: 0;
 	z-index: 10;
 	}
@@ -996,18 +999,18 @@ header.hero-invisible #menu .open-filter, header.hero-invisible #menu .open-shar
 	
 .masonry .masonry-item {
 	width: 24.98%;								/* will be overwritten by javascript */
-	margin-right: 120px;
+	/*margin-right: 120px;*/
 	margin-bottom: 100px;
 	float: left;
 	}
 	
 #portfolio-grid.masonry {
-	width: calc(100% + 60px);				
+	width: calc(100%);				
 	margin-bottom: -60px;
 	}
 	
 #portfolio-grid.masonry .masonry-item {
-	margin-right: 60px;
+/*	margin-right: 60px;*/
 	margin-bottom: 60px;
 	}
 	
@@ -1094,7 +1097,16 @@ a.img-hover:hover .hover-caption {
 */
 
 /* your logo height */
-header #logo { height: 30px;	 }
+header #logo {
+    width:5%; 
+    height: 11%;
+    .logo:after {
+  content: "";
+  display: block;
+  padding-bottom: 100%;
+}
+}
+
 .open-nav { height: 30px; }
 .open-nav .text { line-height: 30px;	 }
 nav#main-nav ul li > a { line-height: 30px; }
@@ -1834,6 +1846,103 @@ nav[role="navigation"] {
     overflow: hidden;
 }
 /*===== Footer =====*/
+footer {
+	width: 90%;
+  position: absolute;
+  bottom: 0;
+      flex-shrink: 0;
+ 	margin: 160px 0 25px;
+	padding: 0 70px ;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-ms-box-sizing: border-box;
+	-o-box-sizing: border-box;
+	box-sizing: border-box;
+        vertical-align: baseline;
+}
+footer .inner {
+	padding: 160px 0 15px 30px;
+    width: 90%;
+
+	border-top: 1px solid #000;
+	border-bottom: 10px solid #000;
+position: static;
+    margin-bottom: 0px;
+    z-index: 20;
+}
+#footer_mark {
+	width: 63px;
+	margin-left: -47px;
+	padding: 0 15px;
+	background: #fff;
+	position: absolute;
+	top: -31px;
+	left: 50%;
+}
+#footer_mark img {
+	width: 100%;
+	height: auto;
+}
+#footer_contents {
+	width: 80%;
+	margin-top: 10px;
+	float: left;
+    
+}
+#footer_info .company_name {
+	font-size: 18px;
+	font-weight: bold;
+	letter-spacing: 3px;
+
+}
+#footer_info .add {
+	margin-top: 13px;
+}
+#footer_info .add span {
+	margin-left: 10px;
+}
+#footer {
+	margin-top: 30px;
+}
+#footer_name {
+	font-size: 70px;
+	line-height: 1;
+	float: left;
+}
+#footer_right {
+	margin: 7px 0 0 40px;
+	float: left;
+}
+#footer_right .link a {
+	display: block;
+	width: 240px;
+	padding-bottom: 5px;
+	border-bottom: 1px solid #000;
+	background: url(../img/common/arrow.png) no-repeat 220px 2px;
+	background-size: 17px auto;
+	font-size: 15px;
+	font-weight: bold;
+	letter-spacing: 0.5px;
+}
+#copyright {
+	margin-top: 10px;
+	font-size: 11px;
+}
+#footer_nav {
+	width: 140px;
+	margin-top: -15px;
+}
+#pagetop {
+	width: 41px;
+	height: 41px;
+	position: fixed;
+	bottom: 246px;
+	right: 0;
+}
+#pagetop img {
+	width: 100%;
+	height: auto;
+}
 
 
 /*=================================*/
