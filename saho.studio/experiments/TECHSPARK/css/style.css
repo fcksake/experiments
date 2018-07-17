@@ -4,7 +4,7 @@
 }
 
 :root {
-  --green: #ffff46;
+  --green: #D2EBCD;
   --black: #000000;
   --white: #ffffff;
 }
@@ -15,8 +15,8 @@
   padding: 32px;
   background: white;
   display: grid;
-  grid-template-columns: repeat(16, 60px);
-  grid-template-rows: repeat(48, 50px);
+  grid-template-columns: repeat(22, 60px);
+  grid-template-rows: repeat(70, 50px);
   grid-auto-columns: 60px;
   grid-auto-rows: 50px;
   justify-content: center;
@@ -28,7 +28,8 @@
   border: 20px solid var(--green);
 }
 .page .ingredient-block {
-  background: url("https://hexschool.github.io/THE_F2E_Design/week4-product%20gallery/assets/pattern%20unit.png") repeat;
+  background: url(img/figma%20wireframes.gif) repeat;
+      background-size: cover;
 }
 .page i {
   grid-column: 2 / 3;
@@ -52,10 +53,10 @@
   color: var(--white);
 }
 .page header {
-  grid-column: 2 / 19;
+  grid-column: 2 / 22;
   grid-row: 3/ 14;
   display: grid;
-  grid-template-columns: repeat(14, 60px);
+  grid-template-columns: repeat(22, 60px);
   grid-template-rows: repeat(10, 50px);
 }
 .page header .header__solid-block {
@@ -67,9 +68,9 @@
   grid-row: 7 / 11;
 }
 .page header .header__img {
-  grid-column: 2 / -2;
+  grid-column: 8 / 3;
   grid-row: 2 / 14;
-  background: url(img/Image00001_2be86eeb-f0ff-47d8-8a9a-de895350e354_1024x1024.jpg) no-repeat center;
+  background: url(img/mockup07132018.gif) no-repeat center;
   background-size: cover;
 }
 .page header .header__title {
@@ -108,11 +109,11 @@
   -webkit-transform: rotate(180deg);
           transform: rotate(180deg);
 }
-.page header:hover > .header__img {
+/*.page header:hover > .header__img {
   grid-column: 1 / -1;
   grid-row: 1 / -1;
   transition: 5s linear;
-}
+}*/
 .page header:hover > .header__title {
   color: var(--white);
   transition: 1s linear;
@@ -136,7 +137,7 @@
   font-style: italic;
 }
 .page article .article__title {
-  grid-column: 3 / 10;
+  grid-column: 3 / 18;
   grid-row: 1;
   font-size: 48px;
   font-weight: 900;

@@ -2,192 +2,208 @@
 <!--[if lt IE 7]> <html class="no-js ie6 oldie" lang="en"> <![endif]-->
 <!--[if IE 7]>    <html class="no-js ie7 oldie" lang="en"> <![endif]-->
 <!--[if IE 8]>    <html class="no-js ie8 oldie" lang="en"> <![endif]-->
-<!--[if gt IE 8]><!--> <html class="no-js" lang="en-US"> <!--<![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js" lang="en-US">
+<!--<![endif]-->
 
 
 <head>
 
-<!-- DEFAULT META TAGS -->
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
-<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-<title>SA\HO design + technology</title>
-<!-- DEFAULT META TAGS -->
+    <!-- DEFAULT META TAGS -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>SA\HO design + technology</title>
+    <!-- DEFAULT META TAGS -->
 
-<!-- CSS -->
-<link rel="stylesheet" id="default-style-css"  href="../styleAVOCmenu.css" type="text/css" media="all" />
+    <!-- CSS -->
+    <link rel="stylesheet" id="default-style-css" href="../styleAVOCmenu.css" type="text/css" media="all" />
 
-<link rel="stylesheet" id="wolf-css" href="../wolf.css" type="text/css" media="all" />
+    <link rel="stylesheet" id="wolf-css" href="../wolf.css" type="text/css" media="all" />
 
-<link rel="stylesheet" id="lightcase-css" href="../lightcase.css" type="text/css" media="all" />
+    <link rel="stylesheet" id="lightcase-css" href="../lightcase.css" type="text/css" media="all" />
 
-<link rel="stylesheet" id="mqueries-style-css"  href="../mqueries.css" type="text/css" media="all" />
-<!-- CSS -->
+    <link rel="stylesheet" id="mqueries-style-css" href="../mqueries.css" type="text/css" media="all" />
+    <!-- CSS -->
     <link href='http://fonts.googleapis.com/css?family=Righteous&amp;subset=latin,latin-ext' rel='stylesheet' type='text/css'>
     <link href='http://fonts.googleapis.com/css?family=Quicksand:300,400,700' rel='stylesheet' type='text/css'>
-<style>
-    .main-content {
-	font-family: 'Open Sans', serif;
-	padding-top: 5%;
-	margin: 0 auto;
-	max-width: 100%;
+    <style>
+        .main-content {
+            font-family: 'Open Sans', serif;
+            padding-top: 5%;
+            margin: 0 auto;
+            max-width: 100%;
+        }
+
+        #photos {
+            margin: 0 auto;
+            width: 100%;
+            position: relative;
+            max-height: 96%
+        }
+
+        #photos a {
+            margin: 0 auto;
+            padding: 0;
+            text-decoration: none;
+
+
+        }
+
+        #photos img {
+            position: static;
+            float: right;
+            margin: 0 auto;
+            padding: 0;
+            width: 100%;
+            opacity: 0.8;
+            background: #e8faff;
+            mix-blend-mode: luminosity;
+
+        }
+
+        #photos sidebar {
+            position: absolute;
+            left: 0;
+            writing-mode: vertical-rl;
+            text-orientation: sideways;
+            background: black;
+            color: white;
+            width: 5%;
+            float: left;
+            height: 30%;
+            /* padding: 6px 8px 6px 16px; */
+            top: 0px;
+            z-index: 12;
+            font-size: .80vw;
+            text-align: center;
+            vertical-align: middle;
+            line-height: 180%;
+            letter-spacing: 1px;
+            font-family: helvetica, sans-serif;
+            /*"Trebuchet MS",helvetica, sans-serif;*/
+        }
+
+        #photos sidebarwhite {
+            position: absolute;
+            left: 0;
+            writing-mode: horizontal-tb;
+            background: white;
+            color: black;
+            width: 5%;
+            float: left;
+            height: 100%;
+            top: 0px;
+            z-index: 9;
+            font-size: .80vw;
+            text-align: center;
+            text-transform: full-width;
+            vertical-align: middle;
+            padding: 16% 0;
+            line-height: 220%;
+        }
+
+        #photos p {
+            padding: 22% 0 6% 26%;
+            position: absolute;
+            max-width: 70%;
+            font-family: "quicksand", Consolas, monospace;
+            color: #000000;
+            font-size: 1.8vw;
+            text-align: left;
+            letter-spacing: -1px;
+            float: right;
+            line-height: 100%;
+            Z-index: 8;
+        }
+
+        #photos p1 {
+            padding: 10% 0 6% 26%;
+            position: absolute;
+            max-width: 92%;
+            font-family: 'Righteous', helvetica, sans-serif;
+            /*"Trebuchet MS",helvetica, sans-serif;*/
+            color: #000000;
+            font-size: 7vw;
+            text-align: left;
+            z-index: 8;
+        }
+
+        #photos p2 {
+            padding: 6% 0 6% 60%;
+            position: absolute;
+            max-width: 82%;
+            font-family: 'Righteous', helvetica, sans-serif;
+            /*"Trebuchet MS",helvetica, sans-serif;*/
+            color: #000000;
+            font-size: 7vw;
+            text-align: left;
+            z-index: 8;
+            opacity: 0.7;
+        }
+    #photos    div.sticky {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    background-color: white;
+    padding: 50px;
+    font-size: 20px;
 }
-
-#photos {
-	margin: 0 auto;
-	width: 100%;
-	position: relative;
-    max-height: 96%
-}
-
-#photos a {
-	margin: 0 auto;
-	padding: 0;
-	text-decoration: none;
-
-
-}
-
-#photos img {
-	position: static;
-	float:right;
-    margin: 0 auto;
-	padding: 0;
-	width: 100%;
-    opacity: 0.8;
-    background: #e8faff;
-    mix-blend-mode: luminosity;
-
-}
-
-#photos sidebar {
-    position:absolute;
-    left:0;
-    writing-mode: vertical-rl;
-    text-orientation: sideways;
-    background: black;
-    color: white;
-    width: 5%;
-    float: left;
-    height: 30%;
-   /* padding: 6px 8px 6px 16px; */
-    top:0px;
-    z-index: 12;
-    font-size: .80vw;
-    text-align:center;
-    vertical-align: middle;
-    line-height: 220%;
-    letter-spacing: 1px;
-    font-family: helvetica,sans-serif;/*"Trebuchet MS",helvetica, sans-serif;*/
-
-    }
-    
- #photos sidebarwhite {
-    position:absolute;
-    left:0;
-    writing-mode: vertical-rl;
-    text-orientation: sideways;
-    background: white;
-    color: white;
-    width: 5%;
-    float: left;
-    height: 100%;
-  
-    top:0px;
-    z-index: 11;
-    }
-
-#photos p {
-	padding: 22% 0 6% 26%;
-	position: absolute;
-	max-width: 70%;
-    
-	font-family: "Righteous",helvetica, sans-serif;
-    color: #000000;
-	font-size: 1.8vw;
-	text-align: left;
-    letter-spacing: -1px;
-    float:right;
-    line-height: 100%;
-    Z-index: 8;
-}
-
-#photos p1 {
-	padding: 10% 0 6% 26%;
-	position: absolute;
-	max-width: 92%;
-	font-family: 'Righteous',helvetica,sans-serif;/*"Trebuchet MS",helvetica, sans-serif;*/
-    color: #000000;
-	font-size: 7vw;
-	text-align: left;
-    z-index:8;
-    }
-    
-#photos p2 {
-	padding: 6% 0 6% 60%;
-	position: absolute;
-	max-width: 82%;
-	font-family: 'Righteous',helvetica,sans-serif;/*"Trebuchet MS",helvetica, sans-serif;*/
-    color: #000000;
-	font-size: 7vw;
-	text-align: left;
-    z-index:8;
-    opacity: 0.7;
-    }
-    
- 
     </style>
 </head>
 
-    
-    
+
+
 <body>
 
-<!-- PAGE CONTENT -->
+    <!-- PAGE CONTENT -->
 
-<div class="main-content">
-    <section id="photos">
-      
-        <a >
+    <div class="main-content">
+        <section id="photos">
+
+            <a>
                 
             <img src='img/cover.png'  >
 
             <p1><u><strong>SA</strong>\<strong>HO</strong></u></p1>
+
              <p2><img src="img/placeholderAsset%206@3x.png"></img></p2>
-      <p>Hello! I'm in the middle of re-coding my website as of 07/05/2018, thus none of the links are currently responsive <br> <br> If you would like to see some of my work, you may access my old site and resume in the hamburger nav or contact me at <u>saho@cmu.edu</u></p>
+      <p><strong>Hello! I'm in the middle of re-coding my website as of 07/05/2018, thus none of the links are currently responsive <br> <br> If you would like to see some of my work, you may access my old site and resume in the hamburger nav or contact me at <u>saho@cmu.edu</u></strong></p>
                             *
-				    </a>     
-        
-        <sidebar><br>INTEGRATIVE DESIGN + TECHNOLOGY</sidebar>
-         <sidebarwhite>DESIGN + TECHNOLOGY</sidebarwhite>
-               
-  </section>
-    
-</div>
+				    </a>
 
-<div id="page-content">
+            <sidebar><br>INTEGRATIVE DESIGN + TECHNOLOGY</sidebar>
+
+            <sidebarwhite> follow me: <br><br>the 'gram<a href="https://www.instagram.com/samc.ho/" ><img src="img/logo_instagram.png"></a><br><br><br>clap clap <a href="https://medium.com/@sch1" target="_blank"><img src="img/logo_medium.png" class="mit"></a> <br> <br> <br> link up  <a href="https://www.linkedin.com/in/samceeho"><img src="img/ICON_linkedin.png"></a><br></sidebarwhite>
+        </section>
+                                <div class="sticky"> Let's make something damn wonderful </div>
+                            <div class="sticky">I will stick to the screen when you reach my scroll position</div>
+    </div>
+
+    <div id="page-content">
 
 
-	<!-- HEADER -->
- 	<header id="header" class="header-transparent"> 
-    
-                <!--     <h2>let's make something wonderful--</h2>-->
- 		<div class="header-inner clearfix">
-              
-		
-             <div id="logo" class="left-float">
-                 <a id="logo" class="logo img"  href="http://saho.studio/index.html"> 
+        <!-- HEADER -->
+        <header id="header" class="header-transparent">
+
+            <!--     <h2>let's make something wonderful--</h2>-->
+            <div class="header-inner clearfix">
+
+
+                <div id="logo" class="left-float">
+                    <a id="logo" class="logo img" href="http://saho.studio/index.html"> 
                      <img src='img/placeholderAsset%205@3x.png'></a>
 
- 				<a id="dark-logo" class="logo img" href="http://saho.studio/index.html"></a>
-             </div>
-           
-             <div id="menu" class="right-float clearfix">
-                 <a href="#" class="open-nav"><span class="hamburger"></span></a>
-               
-             	<nav id="main-nav">
- 					<ul>
- 						<!--<li><a href="http://marisa.lu/index.html">Showcase</a>
+                    <a id="dark-logo" class="logo img" href="http://saho.studio/index.html"></a>
+                </div>
+
+                <div id="menu" class="right-float clearfix">
+                    <a href="#" class="open-nav"><span class="hamburger"></span></a>
+
+                    <nav id="main-nav">
+                        <ul>
+                            <!--<li><a href="http://marisa.lu/index.html">Showcase</a>
                          	<ul class="submenu">
                              	<li><p style="text-align:left;color:white; font-family: 'quicksand', Arial, sans-serif;font-size: 0.8em;">Design 'folio of fully documented projects</p></li>
                              </ul>
@@ -202,166 +218,171 @@
                              	<li><p style="text-align:left; color:white; font-family: 'quicksand', Arial, sans-serif;
     font-size: 0.8em;">My idea incubator, coded brainbarf, + technical skills</p></li>
                              </ul></li>--->
- 						<li><a href="https://samanthaho.myportfolio.com/"> Old Site </a></li>
- 						<li><a href="img/HoSamanthaResume.pdf" target="_blank"> Resume </a></li>
-                     </ul>
-             	</nav>
-                <a href="#" class="open-filter" data-related-grid="portfolio-grid">Filter</a>
-            </div>
-            
-            <div id="header-filter">
-            	<div class="filter-inner align-center">
-                    <a href="#" class="close-filter">Close</a>
-                    <ul id="portfolio-filter" class="filter wolf-filter clearfix" data-related-grid="portfolio-grid">
-                        <li><a class="active" href="#" data-filter-value="*">All</a></li>
-                        <li><a data-filter-value=".aesthetic" href="#" title="Branding">Aesthetic</a></li>
-                        <li><a data-filter-value=".interactive" href="#" title="Print">Interactive</a></li>
-                        <li><a data-filter-value=".technical" href="#" title="Print">Technical</a></li>
-                    </ul>
+                            <li><a href="https://samanthaho.myportfolio.com/"> Old Site </a></li>
+                            <li><a href="img/HoSamanthaResume.pdf" target="_blank"> Resume </a></li>
+                        </ul>
+                    </nav>
+                    <a href="#" class="open-filter" data-related-grid="portfolio-grid">Filter</a>
                 </div>
-            </div> 
-                    
-		</div> <!-- END .header-inner --> 
 
-    </header>
-	<!-- HEADER -->    
-     	     
-    <!-- HERO  -->
-		<div style="margin:6% 0%;">
-        <!-- <img src=img/cover.png>-->
-				<p style="text-align:center; z-index=2;"><!--Eclectic explorations of aesthetic, interactive, and technical affordances in scripted mediums--></p>
-		</div>
+                <div id="header-filter">
+                    <div class="filter-inner align-center">
+                        <a href="#" class="close-filter">Close</a>
+                        <ul id="portfolio-filter" class="filter wolf-filter clearfix" data-related-grid="portfolio-grid">
+                            <li><a class="active" href="#" data-filter-value="*">All</a></li>
+                            <li><a data-filter-value=".aesthetic" href="#" title="Branding">Aesthetic</a></li>
+                            <li><a data-filter-value=".interactive" href="#" title="Print">Interactive</a></li>
+                            <li><a data-filter-value=".technical" href="#" title="Print">Technical</a></li>
+                        </ul>
+                    </div>
+                </div>
 
-            
-	<!-- PAGEBODY -->
-	<section id="page-body" class="nopadding">
-		<div class="wrapper">
-            
-            
-				<p style="color:white">don't mind me<br></br><br></br><br></br></p>
+            </div>
+            <!-- END .header-inner -->
+
+        </header>
+        <!-- HEADER -->
+
+        <!-- HERO  -->
+        <div style="margin:6% 0%;">
+            <!-- <img src=img/cover.png>-->
+            <p style="text-align:center; z-index=2;">
+                <!--Eclectic explorations of aesthetic, interactive, and technical affordances in scripted mediums-->
+            </p>
+        </div>
 
 
-			<div id="portfolio-grid" class="wolf-grid clearfix" data-randomhorizontaloffset="true" data-mouseparallax="true">
-				<div class="wolf-item portfolio-wolf-item aesthetic interactive">
-					<div class="wolf-item-inner">
-						<div class="wolf-media portfolio-media"  >
-                        	<a href="RCBXNIKELAB/index.html" class="wolf-media-link"    target="_blank"><img src="img/wbgif.gif" style="opacity: .8"; alt="SEO NAME"></a>
-                    	</div>
-						
-						<div class="wolf-caption portfolio-caption" style="margin-top: 40%;">
-               
-                            <a href="RCBXNIKELAB/index.html"class="wolf-caption-link" style="background:#e6e6e6;   opacity: 0.8;padding: 20px;" target="_blank">
-                            
-                            <h6 class="alttitle portfolio-category">Integrated Visual Storytelling</h6>
-							<h4 class="portfolio-name"><strong>Warner Bros.<br> experience</strong></h4>
-							</a>
-						</div>
-					</div>
-				</div>  
-				<div class="wolf-item portfolio-wolf-item technical interactive">
-					<div class="wolf-item-inner">
-						<div class="wolf-media portfolio-media">
-                        	<a href="https://medium.com/lumar-process-documentation/animated-lamp-bdc7ab569740" class="wolf-media-link" target="_blank"><img src="img/LEVI/20180611_145429%20(1).jpg" alt="Animated lamp"></a>
-                    	</div>
-						
-						<div class="wolf-caption portfolio-caption" style="margin-bottom: 18%;">
-							 <a href="pidgeon/index.html" class="wolf-caption-link" target="_blank">
-                            <h6 class="alttitle portfolio-category" style="color: #f75067;">Robotics + Persona Design </h6>
-							<h4 class="portfolio-name" style="color: #f75067;"><strong>LEVI<br></strong></h4>
-                            </a>
-						</div>
-					</div>
-				</div> 
+        <!-- PAGEBODY -->
+        <section id="page-body" class="nopadding">
+            <div class="wrapper">
 
-				<div class="wolf-item portfolio-wolf-item technical">
-					<div class="wolf-item-inner">
-						<div class="wolf-media portfolio-media">
-                        	<a href="https://medium.com/@sch1/tartanhacks-2018-859b2f04be0f" class="wolf-media-link" data-rel="lightcase"><img src="img/COVERBRICSS.png" alt="hardware design"></a>
-                    	</div>
-						
-						<div class="wolf-caption portfolio-caption">
-                            <a href="heartsensor/index.html" class="wolf-caption-link" style="border:6px solid #f75067; padding: 15px;"data-rel="lightcase">
-                            <h6 class="alttitle portfolio-category" style="color: #f75067;">Interaction Design <br>CV + Java + Sketch</h6>
-							<h4 class="portfolio-name" style="color: #f75067;"><strong>Bri{css}</strong></h4>
-							</a>
-						</div>
-					</div>
-				</div>
-				<div class="wolf-item portfolio-wolf-item interactive">
-					<div class="wolf-item-inner">
-						<div class="wolf-media portfolio-media">
-                     <a href="https://medium.com/@sch1/tartanhacks-cmu-2017-e5aa92e106bf" class="wolf-media-link" data-rel="lightcase"><img src="img/ROCKPRINTING/videotogif_2017.02.11_17.06.10.gif" alt="hardware design"></a>
-                    	</div>
-						
-						<div class="wolf-caption portfolio-caption">
-                            <a href="ink/index.html" class="wolf-caption-link" data-rel="lightcase">
-                            <h6 class="alttitle portfolio-category"style="color:#286872">GOOGLE Selected Winner<br>Unity + Arduino</h6>
-							<h4 class="portfolio-name" style="color:#286872"><strong>XYZ AR</strong></h4>
-							</a>
-						</div>
-					</div>
-				</div> 
-                <div class="wolf-item portfolio-wolf-item aesthetic">
-					<div class="wolf-item-inner">
-						<div class="wolf-media portfolio-media">
-                        	<a href="promo.html" class="wolf-media-link" data-rel="lightcase" title="Generated the footage for 0:00 to 0:36, and from 0:53 onwards."><img src="img/SAHO/UIGIF.gif" alt="video work"></a>
-                    	</div>
-						
-						<div class="wolf-caption portfolio-caption">>
-                            <a href="https://player.vimeo.com/video/252834582?title=0&amp;byline=0&amp;portrait=0" class="wolf-caption-link" style="border:8px solid #003fff; padding: 15px;"data-rel="lightcase">
-                            <h6 class="alttitle portfolio-category" style="color: #003fff;">Front End Development
-                                <br> html/CSS/JS</h6>
-							<h4 class="portfolio-name" style="color: #003fff;"><strong>Portfolio SitE</strong></h4>
-							</a>
-						</div>
-					</div>
-				</div>
-				<div class="wolf-item portfolio-wolf-item interactive">
-					<div class="wolf-item-inner">
-						<div class="wolf-media portfolio-media">
-                        	<a href="#" class="wolf-media-link"><img src="img/techspark/mockup07132018.gif" alt="face recognition video filter"></a>
-                    	</div>
-						
-						<div class="wolf-caption portfolio-caption">
-							<a href="https://github.com/MohahaMarisa" class="wolf-caption-link">
-                            <h6 class="alttitle portfolio-category" style="color:#d36586;">Python + Sketch + Html/CSS/JS</h6>
-							<h4 class="portfolio-name" style="color:#d36586;"><strong>TechSpark</strong></h4>
-                            </a>
-						</div>
-					</div>
-				</div> 
-				<div class="wolf-item portfolio-wolf-item aesthetic">
-					<div class="wolf-item-inner">
-						<div class="wolf-media portfolio-media">
-                        	<a href="squishy/index.html" class="wolf-media-link" target="_blank"><img src="img/WB/animaniacs/24291447_10154887046651751_7612870442899225726_o.jpg" alt="Hundreds Animaniacs"></a>
-                    	</div>
-						
-						<div class="wolf-caption cbottom portfolio-caption" style="margin-right:8%;">
-							<a href="squishy/index.html" class="wolf-caption-link" target="_blank">
-                            <h6 class="alttitle portfolio-category"style="color:#e10000">WB + Prova + More</h6>
-							<h4 class="portfolio-name"style="color:#e10000"><strong>Product Development</strong></h4>
-                            </a>
-						</div>
-					</div>
-				</div> 
-				<div class="wolf-item portfolio-wolf-item aesthetic">
-					<div class="wolf-item-inner">
-						<div class="wolf-media portfolio-media">
-                        	<a href="RCBXNIKELAB/index.html" class="wolf-media-link" data-rel="lightcase"><img src="img/RCB/Image00002_1024x1024.jpg" alt="RCB X NIKE"></a>
-                    	</div>
-						
-						<div class="wolf-caption portfolio-caption">
-                            <a href="RCBXNIKELAB/index.html" class="wolf-caption-link" data-rel="lightcase"style="background: #db5345; padding: 20px;">
-                            <h6 class="alttitle portfolio-category" style="color: #fff;">Prototyping + Product Development</h6>
-							<h4 class="portfolio-name" style="color: #fff;"><strong>ROCHAMbeau X NIKELAB</strong></h4>
-							</a>
-						</div>
-					</div>
-				</div>
 
-				<p style="color:white">don't mind me<br></br><br></br><br></br></p>
+                <p style="color:white">don't mind me<br></br><br></br>
+                </p>
 
-				<!---<div class="wolf-item portfolio-wolf-item technical">
+
+                <div id="portfolio-grid" class="wolf-grid clearfix" data-randomhorizontaloffset="true" data-mouseparallax="true">
+                    <div class="wolf-item portfolio-wolf-item aesthetic interactive">
+                        <div class="wolf-item-inner">
+                            <div class="wolf-media portfolio-media">
+                                <a href="WBexperience/index.html" class="wolf-media-link" target="_blank"><img src="img/wbgif.gif" style=" opacity: 0.8;"; alt="SEO NAME"></a>
+                            </div>
+
+                            <div class="wolf-caption portfolio-caption" style="margin-top: 40%;">
+
+                                <a href="WBexperience/index.html" class="wolf-caption-link" style="background:#e6e6e6;  padding: 20px;" target="_blank">
+
+                                    <h6 class="alttitle portfolio-category">Integrated Visual Storytelling</h6>
+                                    <h4 class="portfolio-name"><strong>Warner Bros.<br> experience</strong></h4>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="wolf-item portfolio-wolf-item technical interactive">
+                        <div class="wolf-item-inner">
+                            <div class="wolf-media portfolio-media">
+                                <a href="https://medium.com/lumar-process-documentation/animated-lamp-bdc7ab569740" class="wolf-media-link" target="_blank"><img src="img/LEVI/20180611_145429%20(1).jpg" alt="Animated lamp"></a>
+                            </div>
+
+                            <div class="wolf-caption portfolio-caption" style="margin-bottom: 18%;">
+                                <a href="pidgeon/index.html" class="wolf-caption-link" target="_blank">
+                                    <h6 class="alttitle portfolio-category" style="color: #f75067;">Robotics + Persona Design </h6>
+                                    <h4 class="portfolio-name" style="color: #f75067;"><strong>LEVI<br></strong></h4>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="wolf-item portfolio-wolf-item technical">
+                        <div class="wolf-item-inner">
+                            <div class="wolf-media portfolio-media">
+                                <a href="https://medium.com/@sch1/tartanhacks-2018-859b2f04be0f" class="wolf-media-link" data-rel="lightcase"><img src="img/COVERBRICSS.png" alt="hardware design"></a>
+                            </div>
+
+                            <div class="wolf-caption portfolio-caption">
+                                <a href="heartsensor/index.html" class="wolf-caption-link" style="border:6px solid #f75067; padding: 15px;" data-rel="lightcase">
+                                    <h6 class="alttitle portfolio-category" style="color: #f75067;">Interaction Design <br>CV + Java + Sketch</h6>
+                                    <h4 class="portfolio-name" style="color: #f75067;"><strong>Bri{css}</strong></h4>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="wolf-item portfolio-wolf-item interactive">
+                        <div class="wolf-item-inner">
+                            <div class="wolf-media portfolio-media">
+                                <a href="https://medium.com/@sch1/tartanhacks-cmu-2017-e5aa92e106bf" class="wolf-media-link" data-rel="lightcase"><img src="img/ROCKPRINTING/videotogif_2017.02.11_17.06.10.gif" alt="hardware design"></a>
+                            </div>
+
+                            <div class="wolf-caption portfolio-caption">
+                                <a href="ink/index.html" class="wolf-caption-link" data-rel="lightcase">
+                                    <h6 class="alttitle portfolio-category" style="color:#286872">GOOGLE Selected Winner<br>Unity + Arduino</h6>
+                                    <h4 class="portfolio-name" style="color:#286872"><strong>XYZ AR</strong></h4>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="wolf-item portfolio-wolf-item aesthetic">
+                        <div class="wolf-item-inner">
+                            <div class="wolf-media portfolio-media">
+                                <a href="promo.html" class="wolf-media-link" data-rel="lightcase" title="Generated the footage for 0:00 to 0:36, and from 0:53 onwards."><img src="img/SAHO/UIGIF.gif" alt="video work"></a>
+                            </div>
+
+                            <div class="wolf-caption portfolio-caption">>
+                                <a href="https://player.vimeo.com/video/252834582?title=0&amp;byline=0&amp;portrait=0" class="wolf-caption-link" style="border:8px solid #003fff; padding: 15px;" data-rel="lightcase">
+                                    <h6 class="alttitle portfolio-category" style="color: #003fff;">Front End Development
+                                        <br> html/CSS/JS</h6>
+                                    <h4 class="portfolio-name" style="color: #003fff;"><strong>Portfolio SitE</strong></h4>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="wolf-item portfolio-wolf-item interactive">
+                        <div class="wolf-item-inner">
+                            <div class="wolf-media portfolio-media">
+                                <a href="TECHSPARK/index.html" class="wolf-media-link"><img src="img/techspark/mockup07132018.gif" alt="face recognition video filter"></a>
+                            </div>
+
+                            <div class="wolf-caption portfolio-caption">
+                                <a href="TECHSPARK/index.html" class="wolf-caption-link">
+                                    <h6 class="alttitle portfolio-category" style="color:#d36586;">Python + Sketch + Html/CSS/JS</h6>
+                                    <h4 class="portfolio-name" style="color:#d36586;"><strong>TechSpark</strong></h4>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="wolf-item portfolio-wolf-item aesthetic">
+                        <div class="wolf-item-inner">
+                            <div class="wolf-media portfolio-media">
+                                <a href="squishy/index.html" class="wolf-media-link" target="_blank"><img src="img/WB/animaniacs/24291447_10154887046651751_7612870442899225726_o.jpg" alt="Hundreds Animaniacs"></a>
+                            </div>
+
+                            <div class="wolf-caption cbottom portfolio-caption" style="margin-right:8%;">
+                                <a href="squishy/index.html" class="wolf-caption-link" target="_blank">
+                                    <h6 class="alttitle portfolio-category" style="color:#e10000">WB + Prova + More</h6>
+                                    <h4 class="portfolio-name" style="color:#e10000"><strong>Product Development</strong></h4>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="wolf-item portfolio-wolf-item aesthetic">
+                        <div class="wolf-item-inner">
+                            <div class="wolf-media portfolio-media">
+                                <a href="RCBXNIKELAB/index.html" class="wolf-media-link" data-rel="lightcase"><img src="img/RCB/Image00002_1024x1024.jpg" alt="RCB X NIKE"></a>
+                            </div>
+
+                            <div class="wolf-caption portfolio-caption">
+                                <a href="RCBXNIKELAB/index.html" class="wolf-caption-link" data-rel="lightcase" style="background: #db5345; padding: 20px;">
+                                    <h6 class="alttitle portfolio-category" style="color: #fff;">Prototyping + Product Development</h6>
+                                    <h4 class="portfolio-name" style="color: #fff;"><strong>ROCHAMbeau X NIKELAB</strong></h4>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <p style="color:white">don't mind me<br></br><br></br><br></br>
+                    </p>
+
+                    <!---<div class="wolf-item portfolio-wolf-item technical">
 					<div class="wolf-item-inner">
 						<div class="wolf-media portfolio-media">
                         	<a href="http://cmuems.com/2016/60212/lumar/10/19/lumar-bookofkindness/" class="wolf-media-link" data-rel="lightcase"><img src="something4.jpg" alt="SEO NAME"></a>
@@ -403,7 +424,7 @@
 						</div>
 					</div>
 				</div> -->
-<!-- 				<div class="wolf-item portfolio-wolf-item technical">
+                    <!-- 				<div class="wolf-item portfolio-wolf-item technical">
 					<div class="wolf-item-inner">
 						<div class="wolf-media portfolio-media">
                         	<a href="" class="wolf-media-link"><img src="textrain.gif" alt="text rain"></a>
@@ -417,7 +438,7 @@
 						</div>
 					</div>
 				</div> -->
-<!--                 <div class="wolf-item portfolio-wolf-item ideas">
+                    <!--                 <div class="wolf-item portfolio-wolf-item ideas">
 					<div class="wolf-item-inner">
 						<div class="wolf-media portfolio-media">
                         	<a href="#" class="wolf-media-link" data-rel="lightcase"><p class="lightcase caption">Documentation of project in progress</p><img src="tinyhouse.png" alt="SEO NAME"></a>
@@ -431,32 +452,35 @@
 						</div>
 					</div>
 				</div> -->
-                
-                            		
-			</div> <!-- END #portfolio-grid .wolf-container -->
-			
-		</div>
-        
- 	</section>
-    
-    <!-- FOOTER -->  
-    <!-- FOOTER -->
-    
-</div> <!-- END #page-content -->
-<!-- PAGE CONTENT -->
 
-<!-- SCRIPTS -->
-<script src="../scripts/jquery-2.1.4.min.js"></script>
-<script type="text/javascript" src="../scripts/avoc/jquery.pace.js"></script>
-<script type="text/javascript" src="../scripts/avoc/jquery.easing.1.3.js"></script>
-<script type="text/javascript" src="../scripts/avoc/jquery.easing.compatibility.js"></script>
-<script type="text/javascript" src="../scripts/avoc/tweenMax.js"></script>
-<script type="text/javascript" src="../scripts/avoc/jquery.wolf.min.js"></script>
-<script type="text/javascript" src="../scripts/avoc/jquery.lightcase.min.js"></script>
-<script type="text/javascript" src="../scripts/avoc/script.js"></script>
-<!-- SCRIPTS -->
+
+                </div>
+                <!-- END #portfolio-grid .wolf-container -->
+
+            </div>
+
+        </section>
+
+        <!-- FOOTER -->
+        <!-- FOOTER -->
+
+    </div>
+    <!-- END #page-content -->
+    <!-- PAGE CONTENT -->
+
+    <!-- SCRIPTS -->
+    <script src="../scripts/jquery-2.1.4.min.js"></script>
+    <script type="text/javascript" src="../scripts/avoc/jquery.pace.js"></script>
+    <script type="text/javascript" src="../scripts/avoc/jquery.easing.1.3.js"></script>
+    <script type="text/javascript" src="../scripts/avoc/jquery.easing.compatibility.js"></script>
+    <script type="text/javascript" src="../scripts/avoc/tweenMax.js"></script>
+    <script type="text/javascript" src="../scripts/avoc/jquery.wolf.min.js"></script>
+    <script type="text/javascript" src="../scripts/avoc/jquery.lightcase.min.js"></script>
+    <script type="text/javascript" src="../scripts/avoc/script.js"></script>
+    <!-- SCRIPTS -->
 
 </body>
 
 <!-- Mirrored from marisa.lu/experiments/index.html by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 01 Jul 2018 20:09:43 GMT -->
+
 </html>
