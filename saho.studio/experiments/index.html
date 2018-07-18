@@ -180,6 +180,15 @@
                                 <div class="sticky"> Let's make something damn wonderful </div>
                             <div class="sticky">I will stick to the screen when you reach my scroll position</div>
     </div>
+    
+    
+<div class="spacer s2"></div>
+<div id="trigger1" class="spacer s0"></div>
+<div id="pin1" class="box2 blue">
+	<p>Stay where you are (at least for a while).</p>
+	<a href="#" class="viewsource">view source</a>
+</div>
+<div class="spacer s2"></div>
 
     <div id="page-content">
 
@@ -344,7 +353,7 @@
 
                             <div class="wolf-caption portfolio-caption">
                                 <a href="TECHSPARK/index.html" class="wolf-caption-link">
-                                    <h6 class="alttitle portfolio-category" style="color:#d36586;">Python + Sketch + Html/CSS/JS</h6>
+                                    <h6 class="alttitle portfolio-category" style="color:#d36586;">Full Stack<br>Python + Sketch + Html/CSS/JS</h6>
                                     <h4 class="portfolio-name" style="color:#d36586;"><strong>TechSpark</strong></h4>
                                 </a>
                             </div>
@@ -477,6 +486,21 @@
     <script type="text/javascript" src="../scripts/avoc/jquery.wolf.min.js"></script>
     <script type="text/javascript" src="../scripts/avoc/jquery.lightcase.min.js"></script>
     <script type="text/javascript" src="../scripts/avoc/script.js"></script>
+    
+<script>
+	// init controller
+	var controller = new ScrollMagic.Controller();
+</script>
+ 
+<script>
+	$(function () { // wait for document ready
+		// build scene
+		var scene = new ScrollMagic.Scene({triggerElement: "#trigger1", duration: 300})
+						.setPin("#pin1")
+						.addIndicators({name: "1 (duration: 300)"}) // add indicators (requires plugin)
+						.addTo(controller);
+	});
+</script>
     <!-- SCRIPTS -->
 
 </body>
