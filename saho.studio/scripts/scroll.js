@@ -5,7 +5,7 @@ var controller = new ScrollMagic.Controller();
 $('.fade-in').each(function() {
   
   // build a tween
-  var tween = TweenMax.from($(this), 0.3, {autoAlpha: 0, scale: 0.5, y: '+=30', ease:Linear.easeNone});
+  var tween = TweenMax.from($(this), 0.3, {autoAlpha: 0, scale: 0.5, y: '+=10', ease:Linear.easeNone});
 
   // build a scene
   var scene = new ScrollMagic.Scene({
