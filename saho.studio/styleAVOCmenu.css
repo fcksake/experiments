@@ -209,11 +209,9 @@ letter-spacing: 3px;
 	top: 0;
 	left: 0;
 	width: 100%;
-	height: 100%;
-	z-index: 0;
-  height: 100%;
+	height: 200%;
+	z-index: 10;
   text-align: center;
-  background-image: url(img/cover.png);
 }
 
 h1 {
@@ -244,7 +242,7 @@ font-size: 20px;
 
 	header.non-fixed {	position: absolute; }	
 	
-header .header-inner { padding: 0px 40px; height: 0; margin-top: 50px; margin-bottom: 60px; }
+header .header-inner { padding: 0px 40px; height: 0; margin-top: 16px; margin-bottom: 60px; }
 header .header-inner.wrapper { padding: 0; }
 
 /* header background (white bar when nav is open)*/
@@ -272,7 +270,7 @@ header #logo {
     background: #e10;
 }
 
-header #logo #dark-logo + #light-logo {
+header #logo #light-logo + #dark-logo {
 	position: fixed;
     bottom:0;
     right:0;
@@ -280,8 +278,13 @@ header #logo #dark-logo + #light-logo {
 	opacity: 0; filter: alpha(opacity=0); -ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
 	}
 	
-header #logo img { max-height: 100%; }
-
+header #logo img { 
+    max-width: 60%;
+    max-height: 100%; 
+    position: absolute;
+    top:8%;
+    right:22%;
+    background-size: 5% 5%;}
 
 /* switching logos */
 header #logo .logotype { transition: opacity 0.3s ease; }
@@ -1080,7 +1083,15 @@ a.img-hover:hover .hover-caption {
 */
 
 /* your logo height */
-header #logo { height: 30px;	 }
+header #logo {
+    width:5%; 
+    height: 10%;
+    .logo:after {
+  content: "";
+  display: block;
+  padding-bottom: 10;
+}
+}
 .open-nav { height: 30px; }
 .open-nav .text { line-height: 30px;	 }
 nav#main-nav ul li > a { line-height: 30px; }

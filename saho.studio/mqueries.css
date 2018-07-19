@@ -175,7 +175,7 @@ blockquote { margin: 40px; }
 /* header (logo menu) relayout*/
 header .header-inner { margin-top: 30px; margin-bottom: 30px; }
 
-header #logo { height: 30px;	 }
+header #logo {     height: 30px; background-color: e10;}
 .open-nav { height: 30px; }
 .open-nav .text { line-height: 30px;	 }
 nav#main-nav ul li > a { line-height: 30px; }

@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en" >
+
+<head>
+  <meta charset="UTF-8">
+  <title>RCB x NIKELAB</title>
+  
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+
+  
+      <link rel="stylesheet" href="css/style.css">
+
+  
+</head>
+
+<body>
+
+  <html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+  <title>RCB x NIKELAB</title>
+</head>
+
+<body>
+
+  <div class="page">
+    <i class="fas fa-arrow-left"></i>
+    <div class="last-page-hint">
+      <div class="last-page-hint__content">back to gallery</div>
+    </div>
+    <header>
+      <div class="header__solid-block solid-block"></div>
+      <div class="header__empty-block empty-block"></div>
+      <div class="header__img"></div>
+      <div class="header__title header_top-right"> RCB x NIKELAB</div>
+      <div class="header__title header_right"></div>
+      <div class="header__title header_left">2018</div>
+      <div class="header__title header_left-bottom">Spring</div>
+    </header>
+
+    <article>
+      <div class="article__hint">PRODUCT DEVELOPMENT</div>
+      <div class="article__title">RCB X NIKELAB</div>
+      <div class="article__subtitle"><em>Design Consultant, 2018</em></div>
+      <div class="article__content1">
+              <p>I worked with a small creative team for Rochambeau remotely to help produce early concepts and digital representations of the shoes. Due to collaborative nature of this projnnect, I needed to move quickly to visually interpret napkin drawings and phone calls into thumbnails, presentable concepts, and CAD drawings. I worked primarily in Solidworks and prepared the files to send to the 3D printers. Having worked with the brand before, I was already familiar with their brand identity and their year long partnership with artist, Aaron Curry.</p>
+
+              <p>This collaboration between <a href="https://rochambeau.nyc/" target="_blank"> <b>Rochambeau</b> </a> and <a href="https://www.nike.com/us/en_us/c/nikelab" target= "_blank"><b>NIKELAB</b></a> is still under production, but view the pre-release <a href="https://rochambeau.nyc/blogs/video/rochambeau_nike" target= "_blank"><b>here</b></a>.</p>
+</div>
+      <div class="article__content2">
+              <strong>tools</strong><br>
+        rapid sketching/prototyping
+        <br>cross-disciplinary collaboration
+        <br>Adobe Creative Suite
+        <br>Solidworks
+        <br>3D Printing
+      </div>
+
+    </article>
+
+    <footer>
+      <div class="footer__solid-block solid-block"></div>
+      <div class="footer__empty-block empty-block"></div>
+      <div class="footer__img1"></div>
+      <div class="footer__img2"></div>
+      <div class="footer__ingredient-block ingredient-block"></div>
+    </footer>
+
+  </div>
+
+</body>
+
+</html>
+  
+  
+
+</body>
+
+</html>
