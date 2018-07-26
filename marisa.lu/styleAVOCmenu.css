@@ -1104,6 +1104,8 @@ header #logo {
   display: block;
   padding-bottom: 10;
 }
+ .logo:hover {
+     opacity: .5;}
 }
 .open-nav { height: 30px; }
 .open-nav .text { line-height: 30px;	 }
