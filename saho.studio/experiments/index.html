@@ -143,11 +143,11 @@
             opacity: 0.7;
         }
 
-        scroll {
+        #photos scrll {
             text-align: center;
             padding: 300px 0;
-            font-size: 30px;
-            text-transform: uppercase;
+            font-size: 20px;
+            text-transform: lowercase;
             z-index: 2
         }
 
@@ -163,11 +163,12 @@
 
         .mit {
             position: relative;
-            top: 22px;
-            left: 650px;
+            bottom: -60px;
+            left: 600px;
             opacity: .5;
-            width: 50px;
-            margin-bottom: 10px;
+            width: 60px;
+            margin-bottom: 100px;
+            z-index: 12;
         }
 
         .sal-sm {
@@ -181,9 +182,9 @@
 
         .mit:hover,
         .sal-sm:hover {
-              opacity: .5;
+           opacity: .5;
         }
-        .credit {
+    .credit {
     position: absolute;
     left: 200px;
     width: 800px;
@@ -191,11 +192,7 @@
     padding-top: 2em;
 
 
-.credit-mit {
-    position: absolute;
-    left: 100px;
-    margin-top: 100px;
-}
+
 
 .credit-mit a {
     opacity: .5;
@@ -219,7 +216,7 @@
 .mit-logo-top {
     position: absolute;
     top: 70px;
-    left: 840px;
+    left: 800px;
     opacity: .5;
 }
 
@@ -245,16 +242,20 @@
             <p1><u><strong>SA</strong>\<strong>HO</strong></u></p1>
 
              <p2><img src="img/placeholderAsset%206@3x.png"></img></p2>
-      <p><strong>Hello! I'm in the middle of re-coding my website as of 07/05/2018, thus none of the links are currently responsive <br> <br> If you would like to see some of my work, you may access my old site and resume in the hamburger nav or contact me at <u>saho@cmu.edu</u></strong></p>
+      <p><strong>Hello! I'm in the middle of re-coding my website as of 07/05/2018, thus none of the links are currently responsive <br> <br> If you would like to see some of my work, you may access my old site and resume in the hamburger nav or contact me at <u>saho@cmu.edu</u></strong>
+            
+                    <scrll class="fade-in"> let's make something damn wonderful</scrll></p>
                             *
 				    </a>
 
             <sidebar><br>INTEGRATIVE DESIGN + TECHNOLOGY</sidebar>
 
             <sidebarwhite> <br>the 'gram<a href="https://www.instagram.com/samc.ho/"><img src="img/logo_instagram.png"></a><br><br><br>clap clap <a href="https://medium.com/@sch1" target="_blank"><img src="img/logo_medium.png" class="mit"></a> <br> <br> <br> link up <a href="https://www.linkedin.com/in/samceeho"><img src="img/ICON_linkedin.png"></a><br></sidebarwhite>
+        
+        
         </section>
 
-        <scroll class="fade-in"> let's make something damn wonderful</scroll>
+
     </div>
 
 
@@ -280,12 +281,12 @@
 
                     <nav id="main-nav">
                         <ul>
-                            <!--<li><a href="http://marisa.lu/index.html">Showcase</a>
+                       <li><a href="ABOUT">ABOUT</a>
                          	<ul class="submenu">
-                             	<li><p style="text-align:left;color:white; font-family: 'quicksand', Arial, sans-serif;font-size: 0.8em;">Design 'folio of fully documented projects</p></li>
+                             	<li><p style="text-align:left;color:white; font-family: 'quicksand', Arial, sans-serif;font-size: 0.8em;">an introduction + skills + experience</p></li>
                              </ul>
                          </li>
-                         <li><a href="http://marisa.lu/art/index.html">Art</a>
+                         <!---<li><a href="http://marisa.lu/art/index.html">Art</a>
  						    <ul class="submenu">
  						        <li><p style="text-align:right; 	
                                 color:#0d0d0d; font-family: 'quicksand', Arial, sans-serif;font-size: 0.8em;">Exhibition pieces, illustration, + sketchbooks</p></li>
@@ -540,15 +541,16 @@
 
         <!-- FOOTER -->
         <div id="footer">
-            <a href="https://medium.com/@sch1" target="_blank">**clap clap**<img src="img/logo_medium.png" class="mit"></a>
+            <a href="https://medium.com/@sch1" target="_blank"><img src="img/logo_medium.png" class="mit">**clap clap**</a>
             <a href="https://www.instagram.com/samc.ho/" target="_blank">the 'gram<img src="img/logo_instagram.png" class="mit"></a>
             <a href="https://www.linkedin.com/in/samceeho" target="_blank">linkety link<img src="img/ICON_linkedin.png" class="mit"></a>
-            <a href="index.html"><img src="img/placeholderAsset%205@3x.png" class="sal-sm"></a>
+
             <a href="index.html"><img src="img/placeholderAsset%206@3x.png" class="sal-sm"></a>
             <span class="credit">
 				<b>contact me to see more of my professional work--<a href="#"> <br/>let's make something wonderful-  saho@cmu.edu </a>
                     </span>
             <span class="mit"> <a>the internet is a great resource<br>developed by Samantha CL Ho </a></span>
+                <span class= "mit-logo-top">SAMANTHA HO <img src= "img/HOME%20SMALLAsset%202.png"></span>
         </div>
         <!-- FOOTER -->
 
@@ -566,10 +568,7 @@
     <script type="text/javascript" src="../scripts/avoc/jquery.lightcase.min.js"></script>
     <script type="text/javascript" src="../scripts/avoc/script.js"></script>
 
-    //
-    <!--
-     <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.2/jquery.min.js'></script>
-<script src='https://cdnjs.cloudflare.com/ajax/libs/gsap/1.18.2/TweenMax.min.js'></script>
+
 <script src='https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/ScrollMagic.min.js'></script>
 <script src='https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/plugins/animation.gsap.js'></script>
     <script type="text/javascript" src="../scripts/scroll.js"></script>
