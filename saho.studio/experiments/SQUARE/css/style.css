@@ -107,11 +107,11 @@
   justify-self: start;
   -webkit-transform: rotate(180deg);
           transform: rotate(180deg);
-}
+}/*
 .page header:hover > .header__img {
   grid-column: 1 / -1;
   grid-row: 1 / -1;
-  transition: 5s linear;
+  transition: 5s linear;*/
 }
 .page header:hover > .header__title {
   color: var(--white);
