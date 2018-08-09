@@ -1,0 +1,157 @@
+body{font-family: Raleway;}
+h1{font-size: 44px;}
+article{width: 300px !important;}
+.absolute{
+  position: absolute;
+}
+/* N A V I G A T I O N */
+#vertical-nav{
+  position: fixed;
+  right: 40px;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 1;
+}
+#vertical-nav li{text-align: right;list-style-type: none;}
+#vertical-nav a{
+  display:inline-block;
+  /* Evite les mouvements bizarres lors du hover quand on utilise les transformations en CSS3 - webkit browsers */
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+#vertical-nav a:after{
+  display: table;
+  clear: both;
+}
+#vertical-nav a span{
+  float: right;
+  display: inline-block;
+  transform: scale(0.6);
+}
+#vertical-nav a:hover span{
+  transform: scale(1);
+}
+#vertical-nav a:hover .label{
+  opacity: 1;
+}
+#vertical-nav a.is-selected .dot{
+  background-color: #fff;
+}
+#vertical-nav .dot{
+  background-color: #abcdef;
+  height: 12px;width: 12px;
+  position: relative;
+  border-radius: 50%;
+  top: 8px;
+  transition: transform 0.2s, background-color 0.5s;
+  transform-origin: 50% 50%; /* on transforme a partir du centre du point */
+}
+#vertical-nav .label{
+  position: relative;
+  margin-right: 10px;
+  padding: .4em .5em;
+  color: #abcdef;
+  font-size: 14px;
+  /*font-size: 0.875rem;*/
+  transition: transform 0.2s, opacity 0.2s;
+  opacity: 0;
+  transform-origin: 100% 50%;
+}
+#vertical-nav .dot.selected{
+  background-color: black;
+}
+#vertical-nav .label.selected{
+  color: black;
+}
+/* fin navigation */
+
+.container{
+  z-index: 2;
+  width: 80%;
+  position: absolute;
+  left: 50%; /* aligne le bord gauche avec le centre du viewport */
+  top: 0;
+  transform: translateX(-50%);
+  min-height: 100%;
+}
+
+/* Dernier plan : petits nuages */
+#parallax-bg1{
+  z-index: 0;
+  position: fixed;
+  font-size: 15px;
+}
+#bg1-1{left:150px;top:150px;}
+#bg1-2{left:550px;top:150px;}
+#bg1-3{left:850px;top:100px;}
+#bg1-4{left:450px;top:450px;}
+#bg1-5{left:850px;top:900px;}
+#bg1-6{left:850px;top:550px;}
+#bg1-7{left:150px;top:1000px;}
+#bg1-8{left:550px;top:1200px;}
+#bg1-9{left:850px;top:1300px;}
+
+/* Dernier plan : gros nuages */
+#parallax-bg2{
+  z-index: 1;
+  position: fixed;
+  font-size: 30px;
+}
+#bg2-1{left:250px;top:50px;}
+#bg2-2{left:650px;top:150px;}
+#bg2-3{left:700px;top:1088px;}
+#bg2-4{left:150px;top:850px;}
+#bg2-5{left:350px;top:550px;}
+#bg2-6{left:700px;top:1588px;}
+#bg2-7{left:250px;top:1050px;}
+#bg2-8{left:350px;top:1350px;}
+#bg2-9{left:300px;top:1788px;}
+
+/* 1er plan : images */
+#parallax-bg3{
+  z-index: 2;
+  position: fixed;
+  left: 50%; /* aligne le bord gauche avec le centre du viewport */
+  top: 0;
+}
+/* On redescend un peu les images pour bien les aligner avec l'article quand il atteint 50% */
+#parallax-bg3>.container>div:not(:first-child){margin-top: 90px;}
+#bg3-1{
+  background: url('http://boudaoud.samir.free.fr/test/icones/256/facebook7.png');
+  width: 256px;height: 256px;
+}
+#bg3-2{
+  background: url('http://boudaoud.samir.free.fr/test/icones/256/linkedin2.png');
+  width: 256px;height: 256px;
+}
+#bg3-3{
+  background: url('http://boudaoud.samir.free.fr/test/icones/256/social19.png');
+  width: 256px;height: 256px;
+}
+#bg3-4{
+  background: url('http://boudaoud.samir.free.fr/test/icones/256/social5.png');
+  width: 256px;height: 256px;
+}
+#bg3-5{
+  background: url('http://boudaoud.samir.free.fr/test/icones/256/social6.png');
+  width: 256px;height: 256px;
+}
+
+/* 1er plan : articles */
+.parallax-bg4{
+  z-index: 2;
+  position: relative;
+  left: 25px;
+}
+.container article{padding-left: 10%;}
+.container.cont1{top: 0;/*background-color: #abcdef;opacity: 0.4;*/}
+.container.cont2{top:100%;/*background-color: #de4fe8;opacity: 0.3;*/}
+.container.cont3{top:200%;/*background-color: #bf85af;opacity: 0.3;*/}
+.container.cont4{top:300%;/*background-color: #d8fabc;opacity: 0.3;*/}
+.container.cont5{top:400%;/*background-color: #acbdfe;opacity: 0.3;*/}
+
+#bg4-1{position:absolute;top:50%;transform: translateY(-50%);width: 200px;}
+#bg4-2{position:absolute;top:50%;transform: translateY(-50%);width: 200px;}
+#bg4-3{position:absolute;top:50%;transform: translateY(-50%);width: 200px;}
+#bg4-4{position:absolute;top:50%;transform: translateY(-50%);width: 200px;}
+#bg4-5{position:absolute;top:50%;margin-bottom:50%;transform: translateY(-50%);width: 200px;}
