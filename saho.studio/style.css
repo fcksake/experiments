@@ -117,7 +117,7 @@ article{width: 300px !important;}
 /* On redescend un peu les images pour bien les aligner avec l'article quand il atteint 50% */
 #parallax-bg3>.container>div:not(:first-child){margin-top: 90px;}
 #bg3-1{
-  background: url('http://boudaoud.samir.free.fr/test/icones/256/facebook7.png');
+  background: url(img/placeholderAsset1@3x.png);
   width: 256px;height: 256px;
 }
 #bg3-2{
